@@ -1,67 +1,50 @@
 body {
-  background-color: #171a21;
-  color: #777;
-  font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    background-color: #171a21;
+    color: #777;
+    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
-#chooseyourgame h1{
-	text-align: center;
-	
-	font-family: 'Radiance';
-
-	font-size: 72px;
-
-	text-transform: uppercase;
-
-	color: #ED3B1C;
-
-	letter-spacing: 8px;
-
-	font-weight: normal;
-
-	margin-top: 54px;
-
-	margin-bottom: 45px;
+#chooseyourgame h1 {
+    text-align: center;
+    font-family: 'Radiance', serif;
+    font-size: 72px;
+    text-transform: uppercase;
+    color: #ED3B1C;
+    letter-spacing: 8px;
+    font-weight: normal;
+    margin-top: 54px;
+    margin-bottom: 45px;
 }
 
-#artifact h1{
-	margin-top: 15vw;
-
-	text-align: center;
-
-	font-size: 28px;
-
-	font-family: "goudy_trajan_mediummedium";
-
-	color: #bca06d;
-
-	letter-spacing: 4px;
-
-	z-index: 99;
-
-	line-height: 1.4;
-
-	text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
-
-	text-transform: uppercase;
+#artifact a, h1 {
+    text-decoration: none;
+    text-align: center;
+    font-size: 72px;
+    font-family: "goudy_trajan_mediummedium", serif;
+    color: #bca06d;
+    letter-spacing: 4px;
+    z-index: 99;
+    line-height: 1.4;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
 }
 
-#dota2 h1{
-	text-align: center;
-	
-	font-family: 'Radiance';
+#dota2 h1 {
+    text-align: center;
+    font-family: 'Radiance', serif;
+    font-size: 72px;
+    text-transform: uppercase;
+    color: #ED3B1C;
+    letter-spacing: 8px;
+    font-weight: normal;
+    margin-top: 54px;
+    margin-bottom: 45px;
+}
 
-	font-size: 72px;
+#artifact-meme h2 {
+    text-align: center;
+}
 
-	text-transform: uppercase;
-
-	color: #ED3B1C;
-
-	letter-spacing: 8px;
-
-	font-weight: normal;
-
-	margin-top: 54px;
-
-	margin-bottom: 45px;
+#artifact-meme-text {
+    text-align: center;
 }
