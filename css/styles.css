@@ -45,3 +45,23 @@ body {
 
 	text-transform: uppercase;
 }
+
+#dota2 h1{
+	text-align: center;
+	
+	font-family: 'Radiance';
+
+	font-size: 72px;
+
+	text-transform: uppercase;
+
+	color: #ED3B1C;
+
+	letter-spacing: 8px;
+
+	font-weight: normal;
+
+	margin-top: 54px;
+
+	margin-bottom: 45px;
+}
