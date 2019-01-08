@@ -30,6 +30,7 @@ body {
 }
 
 #dota2 h1 {
+    text-decoration: none;
     text-align: center;
     font-family: 'Radiance', serif;
     font-size: 72px;
@@ -38,7 +39,10 @@ body {
     letter-spacing: 8px;
     font-weight: normal;
     margin-top: 54px;
-    margin-bottom: 45px;
+}
+
+#dota2 a{
+	text-decoration: none;
 }
 
 #artifact-meme h2 {
@@ -48,23 +52,7 @@ body {
 #artifact-meme-text {
     text-align: center;
 }
-#dota2 h1{
-	text-align: center;
-	
-	font-family: 'Radiance';
 
-	font-size: 72px;
-
-	text-transform: uppercase;
-
-	color: #ED3B1C;
-
-	letter-spacing: 8px;
-
-	font-weight: normal;
-
-	margin-top: 54px;
-}
 
 #navigatorbar{
 	text-align: center;
