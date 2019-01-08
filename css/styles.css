@@ -47,4 +47,38 @@ body {
 
 #artifact-meme-text {
     text-align: center;
+#dota2 h1{
+	text-align: center;
+	
+	font-family: 'Radiance';
+
+	font-size: 72px;
+
+	text-transform: uppercase;
+
+	color: #ED3B1C;
+
+	letter-spacing: 8px;
+
+	font-weight: normal;
+
+	margin-top: 54px;
+}
+
+#navigatorbar{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+
+#navigatorbar a{
+	font-family: 'Radiance';
+	color: #ED3B1C;
+	text-align: center;
+}
+
+#navigatoritem{
+	margin-left: 4px;
+	margin-right: 4px;
 }
