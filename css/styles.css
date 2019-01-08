@@ -1,5 +1,10 @@
+body {
+  background-color: #171a21;
+  color: #777;
+  font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
 
-body{
-
-	background:black;
+#chooseyourgame{
+	text-align: center;
+	font-family: 'Crete Round', serif;
 }
