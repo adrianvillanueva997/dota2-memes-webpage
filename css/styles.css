@@ -62,6 +62,21 @@ body {
 	font-weight: normal;
 
 	margin-top: 54px;
+}
 
-	margin-bottom: 45px;
+#navigatorbar{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+#navigatorbar a{
+	font-family: 'Radiance';
+	color: #ED3B1C;
+	text-align: center;
+}
+
+#navigatoritem{
+	margin-left: 4px;
+	margin-right: 4px;
 }
