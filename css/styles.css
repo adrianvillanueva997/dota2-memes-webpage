@@ -16,6 +16,10 @@ body {
     margin-bottom: 45px;
 }
 
+#chooseyourgame img:hover {
+    transform: scale(1.5);
+}
+
 #artifact a, h1 {
     text-decoration: none;
     text-align: center;
@@ -41,8 +45,8 @@ body {
     margin-top: 54px;
 }
 
-#dota2 a{
-	text-decoration: none;
+#dota2 a {
+    text-decoration: none;
 }
 
 #artifact-meme h2 {
@@ -54,37 +58,41 @@ body {
 }
 
 
-#navigatorbar{
-	text-align: center;
-	display: flex;
-	justify-content: center;
+#navigatorbar {
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 
-#navigatorbar a{
-	font-family: 'Radiance';
-	color: #ED3B1C;
-	text-align: center;
+#navigatorbar a {
+    font-family: 'Radapt uiance', serif;
+    color: #ED3B1C;
+    text-align: center;
 }
 
-#navigatoritem{
-	margin-left: 4px;
-	margin-right: 4px;
+#navigatoritem :hover {
+    color: white;
 }
 
-#about{
-	text-align: center;
-	margin-top: 20px;
-	font-family: 'Radiance';
-	color: #ED3B1C;
+#navigatoritem {
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
-#aboutartifacttitle{
-	font-family: "goudy_trajan_mediummedium", serif;
+#about {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Radiance', serif;
+    color: #ED3B1C;
+}
+
+#aboutartifacttitle {
+    font-family: "goudy_trajan_mediummedium", serif;
     color: #bca06d;
 }
 
-#aboutartifacttext{
-	font-family: "goudy_trajan_mediummedium", serif;
+#aboutartifacttext {
+    font-family: "goudy_trajan_mediummedium", serif;
     color: #bca06d;
 }
