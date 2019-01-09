@@ -71,3 +71,20 @@ body {
 	margin-left: 4px;
 	margin-right: 4px;
 }
+
+#about{
+	text-align: center;
+	margin-top: 20px;
+	font-family: 'Radiance';
+	color: #ED3B1C;
+}
+
+#aboutartifacttitle{
+	font-family: "goudy_trajan_mediummedium", serif;
+    color: #bca06d;
+}
+
+#aboutartifacttext{
+	font-family: "goudy_trajan_mediummedium", serif;
+    color: #bca06d;
+}
