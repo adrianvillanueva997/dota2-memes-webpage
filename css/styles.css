@@ -96,3 +96,24 @@ body {
     font-family: "goudy_trajan_mediummedium", serif;
     color: #bca06d;
 }
+
+#hallofshame{
+	margin-top:20px;
+	margin-bottom:20px;
+	display: flex;
+    justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#hallofshame h4 {
+	font-family: 'Radiance-SemiBold';
+	font-weight: normal;
+	letter-spacing: 1px;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+#hallofshame img:hover {
+    transform: scale(1.1);
+}
