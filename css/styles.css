@@ -117,3 +117,56 @@ body {
 #hallofshame img:hover {
     transform: scale(1.1);
 }
+
+.ashamedname h3{
+	font-family: 'Radiance';
+	font-weight: normal;
+	font-size: 32px;
+	letter-spacing: 3px;
+	color: #ED3B1C;
+	text-shadow: 1px 1px 1px #000000;
+	text-align: center;
+}
+
+.ashamedbio{
+	font-family: 'Radiance';
+	font-size: 18px;
+	color: #808080;
+	line-height: 34px;
+	margin-left: -20px;
+	text-shadow: 1px 1px 1px #000000;
+	text-align: center;
+	display: flex;
+	
+}
+
+.ashamedbio img{
+	height: 100%;
+	width: 100%;
+}
+
+.ashamedmemes{
+	text-align:center;
+}
+
+.ashamedmemes h4{
+	font-size: 18px;
+	padding-bottom: 4px;
+	margin-top: -10px;
+	display: block;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-family: 'Radiance';
+	color: #E0E0E0;
+	text-align:center;
+	margin: 10px;
+}
+
+.memebox{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.memebuttons{
+	text-align: center;
+}
