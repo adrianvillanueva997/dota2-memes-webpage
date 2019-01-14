@@ -170,3 +170,17 @@ body {
 .memebuttons{
 	text-align: center;
 }
+
+#log_in_form{
+	text-align:center;
+	margin-top: 10px;
+}
+
+#sign_up_form{
+	text-align:center;
+	margin-top: 10px;
+}
+
+#artifactreally{
+	display:none;
+}
