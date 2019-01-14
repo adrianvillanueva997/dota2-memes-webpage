@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/png" href="../resources/img/favicon.png"/>
     <link rel="stylesheet" href="../css/styles.css">
-	<script src="../JS/artifactreally.js"></script>
+    <script src="../JS/artifactreally.js"></script>
 
     <script>
         $(function () {
@@ -34,27 +34,30 @@
 <div id="sign_up_form">
     <form action="../PHP/sign_up.php" method="post">
         <br>
-		<br>        
-		User name:<br>
+        <br>
+        User name:<br>
         <input id="#username" type="text" name="username" value="">
         <br>
-		<br>
+        <br>
         Email:<br>
         <input id="#email" type="text" name="email" value="">
         <br>
-		<br>
+        <br>
         Password:<br>
         <input id="#password" type="password" name="password" value="">
         <br>
-		<br>
-		<input type="checkbox" name="dota2"> I play Dota 2<br>
-		<input type="checkbox" name="artifact" id="artifactcheck"> I play Artifact<br>
-		<div id="artifactreally">
-			<input type="checkbox" name="artifact2"> No, really, I play Artifact<br>
-		</div>
-		
-		<br>
-		<br>
+        <br>
+        Write your password again:<br>
+        <input id="#password2" type="password" name="password2" value="">
+        <br>
+        <input type="checkbox" name="dota2"> I play Dota 2<br>
+        <input type="checkbox" name="artifact" id="artifactcheck"> I play Artifact<br>
+        <div id="artifactreally">
+            <input type="checkbox" name="artifact2"> No, really, I play Artifact<br>
+        </div>
+
+        <br>
+        <br>
         <input type="submit" name="submit" value="Submit">
     </form>
 </div>

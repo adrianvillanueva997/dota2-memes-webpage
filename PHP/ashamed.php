@@ -13,36 +13,35 @@
     <link rel="shortcut icon" type="image/png" href="../resources/img/favicon.png"/>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <?php
+    include "fill_ashamed.php";
+    $id = $_GET['id'];
+    $name = get_name($id);
+    $bio = get_bio($id);
+    ?>
 
-    <title>Dota 2</title>
+    <title><?php echo $name; ?></title>
     <script>
         $(function () {
-            $('#navigatorbar').load('nav_bar.html')
+            $('#navigatorbar').load('../html/nav_bar.html')
         });
     </script>
 </head>
 <body>
 <div id="dota2">
-    <a href="dota2.html"><h1>Dota 2</h1></a>
-
+    <a href="../html/dota2.html"><h1>Dota 2</h1></a>
     <div id="navigatorbar">
-
     </div>
     <div class="col-md-12">
         <div class="col-md-2">
         </div>
         <div class="col-md-8">
             <div class="ashamedname">
-                <h3>AdmiralBulldog</h3>
+                <h3><?php echo $name; ?></h3>
             </div>
             <div class="ashamedbio">
                 <img src="../resources/img/ashamed/admiralbulldog.png" alt="250kg beast">
-                <p>The 250kg beast known as AdmiralBulldog (real name Henrik Ahnberg) is a washed up tea eye winner
-                    known for playing two heroes: Furion and Lone Druid (and his bear, Alfredo). Perhaps the most well
-                    known rat doto player, AdmiralBulldog continuously relives the days of TI3 when he played for
-                    Alliance and was a pro player. A self proclaimed alpha male capable of FIRST TRY anything thanks to
-                    his god gamer skills better than +6 treants, AdmiralBulldog's weight, yelling, offlaning and ROOOONS
-                    are a base pillar of Dota 2's memery.</p>
+                <?php echo $bio; ?>
             </div>
             <div class="ashamedmemes">
                 <h4>RELATED MEMES</h4>

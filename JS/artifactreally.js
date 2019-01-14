@@ -1,20 +1,19 @@
-$( document ).ready(function() {
-	
-	$( "#artifactcheck" ).change(function() {
-		artifactReally();
-	});	
-	
-	
+$(document).ready(function () {
+
+    $("#artifactcheck").change(function () {
+        artifactReally();
+    });
+
 
 });
 
-	function artifactReally(){
-		var checkBox = document.getElementById("artifactcheck");
-		var really = document.getElementById("artifactreally");
-		
-		if (checkBox.checked == true){
-			really.style.display = "block";
-		} else {
-			really.style.display = "none";
-		}
-	}
+function artifactReally() {
+    let checkBox = document.getElementById("artifactcheck");
+    let really = document.getElementById("artifactreally");
+
+    if (checkBox.checked === true) {
+        really.style.display = "block";
+    } else {
+        really.style.display = "none";
+    }
+}

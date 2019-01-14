@@ -24,7 +24,6 @@ function check_fields() {
             } else {
                 console.log("Error");
             }
-
         });
     }
 
