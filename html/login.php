@@ -69,6 +69,25 @@ if (isset($_REQUEST['username'])) {
 <br/>Click here to <a href='login.php'>Login</a></div>";
 	}
 }else{
+?>
 
+<div id="log_in_form">
+    <form action="" method="post" name="login">
+        <br>
+        <br>
+        User name:<br>
+        <input id="username" type="text" name="username" value="">
+        <br>
+        <br>
+        Password:<br>
+        <input id="password" type="password" name="password" value="">
+        <br><br>
+        <input type="submit" name="submit" id="submitlogin" value="Submit">
+    </form>
+</div>
+
+<?php } ?>
+
+</body>
 </html>
 
