@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <?php
-    include "fill_ashamed.php";
+    include "../PHP/fill_ashamed.php";
     $id = $_GET['id'];
     $name = get_name($id);
     $bio = get_bio($id);

@@ -1,6 +1,6 @@
 <?php
-include "utilities.php";
-include "db.php";
+include "../PHP/utilities.php";
+include "../PHP/db.php";
 
 if (isset($_POST['submit'])) {
     $username = $_POST['username'];
