@@ -40,7 +40,6 @@
                 <h3><?php echo $name; ?></h3>
             </div>
             <div class="ashamedbio">
-                <img src="../resources/img/ashamed/admiralbulldog.png" alt="250kg beast">
                 <?php echo $bio; ?>
             </div>
             <div class="ashamedmemes">

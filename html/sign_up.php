@@ -17,7 +17,7 @@ if (isset($_REQUEST['username'])) {
 	} else {
         $password = password_hash($password, PASSWORD_DEFAULT);
         $sql_query = "INSERT INTO users (`username`, `email`, `password`)" . " VALUES ('$username' ,'$email' ,'$password');";
-        if ($conn->query($sql_query) === TRUE) {
+        if ($conn->query($sql_query) === true) {
             console_log("Inserted data succesfully");
         } else {
             console_log($conn->error);
