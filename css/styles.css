@@ -196,3 +196,18 @@ body {
 	text-align: center;
 	margin-top: 10px;
 }
+
+#log_in_confirm{
+	text-align: center;
+	font-family: 'Radiance';
+	font-weight: normal;
+	font-size: 32px;
+	color: #ED3B1C;
+	text-shadow: 1px 1px 1px #000000;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#incorrectlogin{
+	text-align:center;
+}
