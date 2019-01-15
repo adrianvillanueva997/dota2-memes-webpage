@@ -18,6 +18,7 @@
     $id = $_GET['id'];
     $name = get_name($id);
     $bio = get_bio($id);
+    $bio_pic = get_bio_pic($id);
     ?>
 
     <title><?php echo $name; ?></title>
@@ -40,7 +41,7 @@
                 <h3><?php echo $name; ?></h3>
             </div>
             <div class="ashamedbio">
-                <img src="../resources/img/ashamed/admiralbulldog.png" alt="250kg beast">
+                <img src="<?php echo $bio_pic; ?>"  alt="250kg beast">
                 <?php echo $bio; ?>
             </div>
             <div class="ashamedmemes">

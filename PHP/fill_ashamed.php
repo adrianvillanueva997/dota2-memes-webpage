@@ -31,3 +31,17 @@ function get_bio($id)
         return null;
     }
 }
+function get_bio_pic($id)
+{
+    $conn = connect_to_db();
+    $sql_query = "SELECT `bio_pic` from `ashamed`" . "WHERE id like $id";
+    $result = $conn->query($sql_query);
+    if ($result->num_rows == 1) {
+        while ($row = $result->fetch_assoc()) {
+            $bio_pic = $row['bio_pic'];
+        }
+        return $bio_pic;
+    } else {
+        return null;
+    }
+}
