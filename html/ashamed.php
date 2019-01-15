@@ -18,6 +18,7 @@
     $id = $_GET['id'];
     $name = get_name($id);
     $bio = get_bio($id);
+    $bio_pic = get_bio_pic($id);
     ?>
 
     <title><?php echo $name; ?></title>
