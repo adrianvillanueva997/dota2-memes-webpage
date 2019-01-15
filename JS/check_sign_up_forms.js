@@ -2,6 +2,8 @@ $(document).ready(function () {
 	    $("#submitsignup").click(function () {
         check_fields();
     });
+	
+	document.getElementById("sign_up_confirm").style.display="none";
 });
 
 function check_fields() {
@@ -11,6 +13,8 @@ function check_fields() {
     var email = $("#email").val();
     var pwd = $("#password").val();
 	var pwd2 = $("#password2").val();
+	let hide = document.getElementById("sign_up_form");
+	let confirmed = document.getElementById("sign_up_confirm");
 
 	console.log("everything is working");
     if (!username) {
@@ -31,6 +35,11 @@ function check_fields() {
         }, function (data, status) {
             if (status === "success") {
                 console.log("Everything was ok, kappa");
+				
+				hide.style.display = "none";
+				document.getElementById("welcome").innerHTML = "Welcome to the International,"+username;
+				confirmed.style.display = "block";
+				
             } else {
                 console.log("Error");
             }

@@ -184,3 +184,15 @@ body {
 #artifactreally{
 	display:none;
 }
+
+#sign_up_confirm{
+	display: none;
+	text-align: center;
+	font-family: 'Radiance';
+	font-weight: normal;
+	font-size: 32px;
+	color: #ED3B1C;
+	text-shadow: 1px 1px 1px #000000;
+	text-align: center;
+	margin-top: 10px;
+}
