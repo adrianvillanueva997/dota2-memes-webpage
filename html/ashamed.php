@@ -40,6 +40,7 @@
                 <h3><?php echo $name; ?></h3>
             </div>
             <div class="ashamedbio">
+                <img src="<?php echo $bio_pic; ?>"  alt="250kg beast">
                 <?php echo $bio; ?>
             </div>
             <div class="ashamedmemes">
