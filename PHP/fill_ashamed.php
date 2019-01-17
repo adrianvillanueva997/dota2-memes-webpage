@@ -45,3 +45,39 @@ function get_bio_pic($id)
         return null;
     }
 }
+
+function get_video_url($id)
+{
+    $conn = connect_to_db();
+    $sql_query = "SELECT `ashamed_video` from `ashamed`" . "WHERE id like $id";
+    $result = $conn->query($sql_query);
+    if ($result->num_rows == 1) {
+        while ($row = $result->fetch_assoc()) {
+            $ashamed_video = $row['ashamed_video'];
+        }
+        return $ashamed_video;
+    } else {
+        return null;
+    }
+}
+
+function get_ashamed_memes($id)
+{
+    $conn = connect_to_db();
+    $sql_query = "select * from desarrollo_web.ashamed person join desarrollo_web.memes meme on meme.ashamed_id = person.id where person.id like ". $id;
+    $result = $conn->query($sql_query);
+    $meme_list = array();
+    if ($result->num_rows > 1) {
+        while ($row = $result->fetch_assoc()) {
+            $meme_path = $row['meme_path'];
+            array_push($meme_list,$meme_path);
+        }
+        $length = count($meme_list);
+        $random_meme = $meme_list[rand(0,$length-1)];
+        console_log($random_meme);
+        return $random_meme;
+    } else {
+        return null;
+    }
+
+}
