@@ -19,6 +19,8 @@
     $name = get_name($id);
     $bio = get_bio($id);
     $bio_pic = get_bio_pic($id);
+    $meme = get_ashamed_memes($id);
+    $video = get_video_url($id);
     ?>
 
     <title><?php echo $name; ?></title>
@@ -41,8 +43,8 @@
                 <h3><?php echo $name; ?></h3>
             </div>
             <div class="ashamedbio">
-                <img src="<?php echo $bio_pic; ?>"  alt="250kg beast">
-                <?php echo $bio; ?>
+                <img src="<?php echo $bio_pic; ?>" alt="250kg beast">
+                <?php echo "<p>". $bio. "</p>" ?>
             </div>
             <div class="ashamedmemes">
                 <h4>RELATED MEMES</h4>
@@ -52,7 +54,7 @@
                         Name of the meme
                     </div>
                     <div class="meme">
-                        Content of the meme
+                    <?php echo $video;?>
                     </div>
                     <div class="memebuttons">
                         <img src="../resources/img/hearticon.png"
@@ -65,7 +67,8 @@
                         Name of the meme
                     </div>
                     <div class="meme">
-                        Content of the meme
+                        <img src="<?php echo $meme; ?>"
+                             alt="Kappa pride">
                     </div>
                     <div class="memebuttons">
                         <img src="../resources/img/hearticon.png"
