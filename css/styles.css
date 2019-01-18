@@ -84,6 +84,25 @@ body {
 	text-align:center;
 }
 
+#frontdescription h3{
+	font-family: 'Radiance';
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 32px;
+	letter-spacing: 3px;
+	color: #ED3B1C;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+#frontdescription h4{
+	font-family: 'Radiance-SemiBold';
+	font-weight: normal;
+	letter-spacing: 1px;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
 #about {
     text-align: center;
     margin-top: 20px;
