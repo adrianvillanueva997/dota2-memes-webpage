@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * connect_to_db
+ *
+ * @return $conn
+ */
 function connect_to_db()
 {
     $servername = "51.15.70.19";
@@ -11,6 +15,7 @@ function connect_to_db()
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
+        return null;
     }
     return $conn;
 }

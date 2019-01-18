@@ -13,16 +13,19 @@
     <link rel="shortcut icon" type="image/png" href="../resources/img/favicon.png"/>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../JS/vote.js"></script>
     <?php
     include "../PHP/fill_ashamed.php";
+    include "../PHP/auth.php";
     $id = $_GET['id'];
     $name = get_name($id);
     $bio = get_bio($id);
     $bio_pic = get_bio_pic($id);
     $meme = get_ashamed_memes($id);
     $video = get_video_url($id);
+    console_log($_SESSION);
+    console_log($meme[1])
     ?>
-
     <title><?php echo $name; ?></title>
     <script>
         $(function () {
@@ -61,21 +64,21 @@
                              alt="Preserved heart of an extinct monster, it bolsters the bearer's fortitude. ">
                     </div>
                 </div>
-
                 <div class="memebox">
                     <div class="memename">
                         Name of the meme
                     </div>
                     <div class="meme">
-                        <img src="<?php echo $meme; ?>"
+                        <img src="<?php echo $meme[0]; ?>"
                              alt="Kappa pride">
                     </div>
                     <div class="memebuttons">
-                        <img src="../resources/img/hearticon.png"
-                             alt="Preserved heart of an extinct monster, it bolsters the bearer's fortitude. ">
+                        <input type="image" class="like" title="Like this meme" id='Like'
+                        src="../resources/img/hearticon.png" alt="Preserved heart of an extinct monster, it bolsters the bearer's fortitude." value="<?php echo $meme[1]?>">
+                        <input type="image" class="dislike" title="Dislike this meme" id='Dislike'
+                        src="../resources/img/doom.png" alt="You are doooooooooooooooooooooomed!">                         
                     </div>
                 </div>
-
             </div>
         </div>
         <div class="col-md-2">

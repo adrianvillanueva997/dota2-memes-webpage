@@ -2,6 +2,13 @@
 include "db.php";
 include "utilities.php";
 
+/**
+ * get_name
+ *
+ * @param  mixed $id
+ *
+ * @return string
+ */
 function get_name($id)
 {
     $conn = connect_to_db();
@@ -17,6 +24,13 @@ function get_name($id)
     }
 }
 
+/**
+ * get_bio
+ *
+ * @param  mixed $id
+ *
+ * @return int
+ */
 function get_bio($id)
 {
     $conn = connect_to_db();
@@ -31,6 +45,13 @@ function get_bio($id)
         return null;
     }
 }
+/**
+ * get_bio_pic
+ *
+ * @param  mixed $id
+ *
+ * @return string
+ */
 function get_bio_pic($id)
 {
     $conn = connect_to_db();
@@ -46,6 +67,13 @@ function get_bio_pic($id)
     }
 }
 
+/**
+ * get_video_url
+ *
+ * @param  mixed $id
+ *
+ * @return string
+ */
 function get_video_url($id)
 {
     $conn = connect_to_db();
@@ -61,21 +89,27 @@ function get_video_url($id)
     }
 }
 
+/**
+ * get_ashamed_memes
+ *
+ * @param  mixed $id
+ *
+ * @return string
+ */
 function get_ashamed_memes($id)
 {
     $conn = connect_to_db();
-    $sql_query = "select * from desarrollo_web.ashamed person join desarrollo_web.memes meme on meme.ashamed_id = person.id where person.id like " . $id;
+    $sql_query = "select * from desarrollo_web.ashamed person join desarrollo_web.memes meme on meme.ashamed_id = person.id where person.id like " . $id . " order by rand() limit 1";
     $result = $conn->query($sql_query);
-    $meme_list = array();
-    if ($result->num_rows > 1) {
+    if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
             $meme_path = $row['meme_path'];
-            array_push($meme_list, $meme_path);
+            $meme_id = $row['meme_id'];
         }
-        $length = count($meme_list);
-        $random_meme = $meme_list[rand(0, $length - 1)];
-        console_log($random_meme);
-        return $random_meme;
+        $meme_list = array();
+        array_push($meme_list,$meme_path);
+        array_push($meme_list,$meme_id);
+        return $meme_list;
     } else {
         return null;
     }
