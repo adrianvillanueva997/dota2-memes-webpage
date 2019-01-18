@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Login</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -14,7 +12,13 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/png" href="../resources/img/favicon.png"/>
     <link rel="stylesheet" href="../css/styles.css">
-	<script src="../JS/check_log_in_forms.js"></script>
+	
+	<?php
+	include "../PHP/meme_selection.php";
+	$meme = random_meme()
+	?>
+	
+    <title>Dota 2</title>
 
     <script>
         $(function () {
@@ -24,35 +28,28 @@
 </head>
 <body>
 <div id="dota2">
-    <a href="dota2.php"><h1>Dota 2</h1></a>
+    <a href="dota2.html"><h1>Dota 2</h1></a>
 
     <div id="navigatorbar">
 
     </div>
-
-</div>
-<div id="log_in_form">
-    <form>
-        <br>
-        <br>
-        User name:<br>
-        <input id="username" type="text" name="username" value="">
-        <br>
-        <br>
-        Password:<br>
-        <input id="password" type="password" name="password" value="">
-        <br><br>
-        <input type="button" name="submit" id="submitlogin" value="Submit">
-    </form>
-</div>
-
-<div id="log_in_confirm">
-	<div id="welcome"></div>
-	<img src="../resources/img/gaben.png" alt="God">
+	<div id ="frontpage">
+        <div class="memebox">
+            <div class="memename">
+                 Name of the meme
+            </div>
+            <div class="meme">
+                <img src="<?php echo $meme; ?>"
+                         alt="Random meme">
+            </div>
+            <div class="memebuttons">
+                <img src="../resources/img/hearticon.png"
+                    alt="Preserved heart of an extinct monster, it bolsters the bearer's fortitude. ">
+            </div>
+        </div>
 	
+	</div>
+
 </div>
-
-<input type="hidden" id="check" value="none">
-
 </body>
 </html>

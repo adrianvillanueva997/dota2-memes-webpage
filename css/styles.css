@@ -80,6 +80,10 @@ body {
     margin-right: 4px;
 }
 
+#frontpage{
+	text-align:center;
+}
+
 #about {
     text-align: center;
     margin-top: 20px;

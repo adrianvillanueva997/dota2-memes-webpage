@@ -32,7 +32,7 @@
 
     <body>
         <div id="dota2">
-            <a href="dota2.html">
+            <a href="dota2.php">
                 <h1>Dota 2</h1>
             </a>
 

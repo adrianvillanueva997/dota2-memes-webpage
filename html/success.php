@@ -26,7 +26,7 @@ include("../PHP/auth.php");
 </head>
 <body>
 <div id="dota2">
-    <a href="dota2.html"><h1>Dota 2</h1></a>
+    <a href="dota2.php"><h1>Dota 2</h1></a>
 
     <div id="navigatorbar">
 

@@ -32,7 +32,7 @@
 </head>
 <body>
 <div id="dota2">
-    <a href="../html/dota2.html"><h1>Dota 2</h1></a>
+    <a href="../html/dota2.php"><h1>Dota 2</h1></a>
     <div id="navigatorbar">
     </div>
     <div class="col-md-12">
