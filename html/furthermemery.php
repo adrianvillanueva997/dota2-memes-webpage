@@ -39,7 +39,7 @@ $meme = random_meme();
                  Name of the meme
             </div>
             <div class="meme">
-                <img src="<?php echo $meme; ?>"
+                <img src="<?php echo $meme[1]; ?>"
                          alt="Random meme">
             </div>
             <div class="memebuttons">
