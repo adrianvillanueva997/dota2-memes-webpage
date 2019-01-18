@@ -64,16 +64,16 @@ function get_video_url($id)
 function get_ashamed_memes($id)
 {
     $conn = connect_to_db();
-    $sql_query = "select * from desarrollo_web.ashamed person join desarrollo_web.memes meme on meme.ashamed_id = person.id where person.id like ". $id;
+    $sql_query = "select * from desarrollo_web.ashamed person join desarrollo_web.memes meme on meme.ashamed_id = person.id where person.id like " . $id;
     $result = $conn->query($sql_query);
     $meme_list = array();
     if ($result->num_rows > 1) {
         while ($row = $result->fetch_assoc()) {
             $meme_path = $row['meme_path'];
-            array_push($meme_list,$meme_path);
+            array_push($meme_list, $meme_path);
         }
         $length = count($meme_list);
-        $random_meme = $meme_list[rand(0,$length-1)];
+        $random_meme = $meme_list[rand(0, $length - 1)];
         console_log($random_meme);
         return $random_meme;
     } else {

@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="../css/styles.css">
 	
 	<?php
-	include "../PHP/fill_ashamed.php";
-	$meme = get_ashamed_memes(0)
-	?>
+include "../PHP/meme_selection.php";
+$meme = random_meme();
+?>
 	
     <title>Dota 2</title>
 

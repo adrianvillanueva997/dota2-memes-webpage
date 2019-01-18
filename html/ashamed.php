@@ -44,7 +44,7 @@
             </div>
             <div class="ashamedbio">
                 <img src="<?php echo $bio_pic; ?>" alt="250kg beast">
-                <?php echo "<p>". $bio. "</p>" ?>
+                <?php echo "<p>" . $bio . "</p>" ?>
             </div>
             <div class="ashamedmemes">
                 <h4>RELATED MEMES</h4>
@@ -54,7 +54,7 @@
                         Name of the meme
                     </div>
                     <div class="meme">
-                    <?php echo $video;?>
+                    <?php echo $video; ?>
                     </div>
                     <div class="memebuttons">
                         <img src="../resources/img/hearticon.png"
