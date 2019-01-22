@@ -22,7 +22,7 @@ $meme = random_meme();
 
     <script>
         $(function () {
-            $('#navigatorbar').load('nav_bar.html')
+            $('#navigatorbar').load('nav_bar.php')
         });
     </script>
 </head>

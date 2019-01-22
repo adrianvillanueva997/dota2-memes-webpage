@@ -20,7 +20,7 @@
         <title>Dota 2</title>
         <script>
         $(function () {
-            $('#navigatorbar').load('nav_bar.html')
+            $('#navigatorbar').load('nav_bar.php')
         });
     </script>
     <?php

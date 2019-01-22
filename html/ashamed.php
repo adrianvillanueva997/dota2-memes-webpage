@@ -29,7 +29,7 @@
     <title><?php echo $name; ?></title>
     <script>
         $(function () {
-            $('#navigatorbar').load('../html/nav_bar.html')
+            $('#navigatorbar').load('../html/nav_bar.php')
         });
     </script>
 </head>
