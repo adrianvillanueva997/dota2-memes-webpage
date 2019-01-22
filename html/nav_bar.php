@@ -42,7 +42,7 @@ $(document).ready(function(){
 	}else{
 	?>
 	<div id="navigatoritem">
-		<input type="button" id="logoutbar"><a href="">Log out of <?php echo $_SESSION['username'];?></a>
+		<input type="image" src="../resources/img/SILENCE.png" id="logoutbar" title="self-SILENCE" alt="SILENCE"><a href="">Log out of <?php echo $_SESSION['username'];?></a>
 	</div>
 	<?php
 	}
