@@ -15,7 +15,9 @@
 	
 	<?php
 	include "../PHP/meme_selection.php";
-	$meme = random_meme()
+    $meme = random_meme();
+    $meme_path = $meme[1];
+    $meme_id = $meme[0];
 	?>
 	
     <title>Dota 2</title>
@@ -50,7 +52,7 @@
                  Name of the meme
             </div>
             <div class="meme">
-                <img src="<?php echo $meme; ?>"
+                <img src="<?php echo $meme_path; ?>"
                          alt="Random meme">
             </div>
             <div class="memebuttons">
